@@ -4,6 +4,8 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout
+              uses: actions/checkout@v4.2.2
             - name: welcome message
               run: echo "myfirst-f1"
             - name:  list files
